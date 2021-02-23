@@ -1,10 +1,9 @@
-import axios from "axios";
+import instance from "./instance";
 export const FETCH_TREASURE = "FETCH_TREASURE";
 
 export const fetchTreasure = () => async (dispatch) => {
   try {
-    const res = await axios.get("http://localhost:8000/treasure");
-    res.treasure = res;
+    const res = await instance.get("/treasure");
     dispatch({ type: FETCH_TREASURE, payload: res.data });
   } catch (error) {
     console.error(error);

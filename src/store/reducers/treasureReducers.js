@@ -1,4 +1,4 @@
-import { FETCH_TREASURE } from "./actions";
+import { FETCH_TREASURE } from "../actions/treasureActions";
 
 const initialState = {
   treasures: [],

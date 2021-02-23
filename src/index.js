@@ -3,22 +3,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import React from "react";
-import { applyMiddleware, compose, createStore } from "redux";
 import { Provider } from "react-redux";
-import reducer from "./store/reducer";
-import thunk from "redux-thunk";
-import { fetchTreasure } from "./store/actions";
-
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
-
-store.dispatch(fetchTreasure());
+// import reducer from "./store/reducer";
+import { BrowserRouter } from "react-router-dom";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
