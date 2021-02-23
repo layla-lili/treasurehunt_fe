@@ -6,6 +6,7 @@ import Loading from "./components/Loading";
 import TreasureList from "./components/TreasureList";
 import { Route, Switch } from "react-router";
 import TrashList from "./components/TrashList";
+import Home from "./components/Home";
 
 function App() {
   const loading = useSelector((state) => state.loading);
@@ -25,6 +26,7 @@ function App() {
           <TrashList />
         </div>
       </Route>
+      <Home />
     </Switch>
   );
 }

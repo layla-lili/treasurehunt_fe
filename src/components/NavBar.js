@@ -12,10 +12,10 @@ const NavBar = () => {
           <Link to="/signin">
             <AuthButtonStyled>Sign in</AuthButtonStyled>
           </Link>
-          <NavItem className="nav-item nav-link" to="/Treasure">
+          <NavItem className="nav-item nav-link" to="/treasure">
             Treasure
           </NavItem>
-          <NavItem className="nav-item nav-link" to="/Trash">
+          <NavItem className="nav-item nav-link" to="/trash">
             Trash
           </NavItem>
         </div>
