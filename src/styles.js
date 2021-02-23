@@ -121,3 +121,42 @@ export const ThemeButton = styled.button`
 export const Title = styled.h1`
   text-align: center;
 `;
+
+export const formstyle = styled.div`
+  max-width: 500px;
+  padding: 10em 20em;
+  background-color: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #f4f7f8;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  fieldset {
+    border: none;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input[type="submit"],
+  input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+  }
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
+    background: #109177;
+  }
+`;
